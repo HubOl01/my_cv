@@ -1,5 +1,5 @@
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import { FiArrowDownCircle } from 'react-icons/fi';
+// import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../../images/developer.svg';
 import developerDark from '../../images/developer-dark.svg';
 import { motion } from 'framer-motion';

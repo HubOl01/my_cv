@@ -1,6 +1,6 @@
 import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
-import AboutClients from '../components/about/AboutClients';
+import AboutCertificates from '../components/about/AboutCertificates';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
 
@@ -31,7 +31,7 @@ const About = () => {
 				exit={{ opacity: 0 }}
 				className="container mx-auto"
 			>
-				<AboutClients />
+				<AboutCertificates />
 			</motion.div>
 		</AboutMeProvider>
 	);

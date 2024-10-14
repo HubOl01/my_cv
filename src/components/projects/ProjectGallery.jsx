@@ -1,7 +1,4 @@
-import { useContext } from "react";
-// import SingleProjectContext from "../../context/SingleProjectContext";
-import { projectsData } from "../../data/projects";
-import bg_github from "../../images/bg_github.png";
+import { Horizontable } from "../Horizontable";
 const ProjectGallery = ({ project }) => {
   //   const { singleProjectData } = useContext(SingleProjectContext);
 
@@ -37,22 +34,23 @@ const ProjectGallery = ({ project }) => {
     //     </div>
     //   ))}
     // </div>
-
-    <div
-      className="flex flex-wrap overflow-x-auto gap-4 py-4 mt-12"
-      style={{ maxWidth: 300 }}
-    >
-      {project.url_images.map((img, index) => (
-        <div key={index} className="flex-shrink-0 w-64">
-          <img
-            className="rounded-xl cursor-pointer shadow-lg"
-            src={img}
-            alt={`Image ${index + 1}`}
-            style={{ minHeight: "300px", minWidth: "200px" }} // Высота по максимуму, ширина авто
-          />
-        </div>
-      ))}
-    </div>
+    <Horizontable>
+      <div
+        className="flex flex-wrap gap-4 py-4 mt-12"
+        style={{ maxWidth: 300 }}
+      >
+        {project.url_images.map((img, index) => (
+          <div key={index} className="flex-shrink-0 w-64">
+            <img
+              className="rounded-xl cursor-pointer shadow-lg"
+              src={img}
+              alt={`Image ${index + 1}`}
+              style={{ minHeight: "300px", minWidth: "200px" }} // Высота по максимуму, ширина авто
+            />
+          </div>
+        ))}
+      </div>
+    </Horizontable>
 
     // <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
     //   {project.url_images.map((image) => {

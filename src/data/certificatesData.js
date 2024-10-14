@@ -1,54 +1,48 @@
 // Import images
-import AmazonImage from "../images/brands/amazon_gray.png";
-import SonyImage from "../images/brands/sony_gray.png";
-import AdidasImage from "../images/brands/adidas_gray.png";
-import FilaImage from "../images/brands/fila_gray.png";
-import NBImage from "../images/brands/nb_gray.png";
-import SamsungImage from "../images/brands/samsung_gray.png";
-import CanonImage from "../images/brands/canon_gray.png";
-import PumaImage from "../images/brands/puma_gray.png";
+import cert1 from "../images/certificates/Braim.Challenge_Платформа_инновационных_соревнований.jpg";
+import cert2 from "../images/certificates/Braim.Challenge_Платформа_инновационных_соревнований_отборочный.jpg";
+import cert3 from "../images/certificates/Braim.Challenge_Платформа_инновационных_соревнований_участие.jpg";
+import cert4 from "../images/certificates/Cert_Cifra-24.png";
+import cert5 from "../images/certificates/mobile_cert.jpg";
+import cert6 from "../images/certificates/stepik-certificate-SQL.jpg";
+import cert7 from "../images/certificates/Сертификат_о_прохождении_онлайн-тренинга.jpg";
 
-export const certificatesHeading = "Some of the brands that trust me";
+export const certificatesHeading = "Мои сертификаты";
 
 export const certificatesData = [
   {
     id: 1,
-    title: "Amazon",
-    img: AmazonImage,
+    title: "Braim.Challenge - Платформа инновационных соревнований",
+    img: cert1,
   },
   {
     id: 2,
-    title: "Sony",
-    img: SonyImage,
+    title: "Braim.Challenge - Платформа инновационных соревнований_отборочный",
+    img: cert2,
   },
   {
     id: 3,
-    title: "Adidas",
-    img: AdidasImage,
+    title: "Braim.Challenge - Платформа инновационных соревнований_участие",
+    img: cert3,
   },
   {
     id: 4,
-    title: "FILA",
-    img: FilaImage,
+    title: "Сертификат о прохождении онлайн-тренинга",
+    img: cert7,
   },
   {
     id: 5,
-    title: "NB",
-    img: NBImage,
+    title: "Cert_Cifra-24",
+    img: cert4,
   },
   {
     id: 6,
-    title: "SAMSUNG",
-    img: SamsungImage,
+    title: "mobile_cert",
+    img: cert5,
   },
   {
     id: 7,
-    title: "CANON",
-    img: CanonImage,
-  },
-  {
-    id: 8,
-    title: "PUMA",
-    img: PumaImage,
+    title: "stepik-certificate-SQL",
+    img: cert6,
   },
 ];

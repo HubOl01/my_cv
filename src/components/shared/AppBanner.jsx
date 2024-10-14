@@ -15,18 +15,18 @@ const AppBanner = () => {
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
 		>
 			<div className="w-full md:w-1/3 text-left">
-				<motion.h1
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.1,
-					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
-				>
-					Привет, меня зовут ru-developer
-				</motion.h1>
+			<motion.h1
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{
+    ease: 'easeInOut',
+    duration: 0.9,
+    delay: 0.1,
+  }}
+  className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase flex items-center"
+>
+  Hi, I am <br/>ru-developer
+</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}

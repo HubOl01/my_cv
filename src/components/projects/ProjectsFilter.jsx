@@ -1,6 +1,6 @@
 const selectOptions = [
-  "Web Application",
   "Mobile Application",
+  "Web Application",
   // 'UI/UX Design',
   // 'Branding',
 ];
@@ -11,22 +11,23 @@ const ProjectsFilter = ({ setSelectProject }) => {
       onChange={(e) => {
         setSelectProject(e.target.value);
       }}
-      className="font-general-medium 
-                px-4
-                sm:px-6
-                py-2
-                border
-                dark:border-secondary-dark
-                rounded-lg
-                text-sm
-                sm:text-md
-                dark:font-medium
-                bg-secondary-light
-                dark:bg-ternary-dark
-                text-primary-dark
-                dark:text-ternary-light
-				pr-10
-            "
+      className="font-general-medium
+                  px-4
+                  sm:px-6
+                  border
+                  dark:border-secondary-dark
+                  rounded-lg
+                  text-sm
+                  sm:text-md
+                  dark:font-medium
+                  bg-secondary-light
+                  dark:bg-ternary-dark
+                  text-primary-dark
+                  dark:text-ternary-light
+				  appearance-none
+      			pr-10
+              "
+      size={0.5}
     >
       <option value={setSelectProject} className="text-sm sm:text-md">
         All Projects

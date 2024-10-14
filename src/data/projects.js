@@ -102,7 +102,12 @@ export const projectsData = [
     url_sources: ["https://github.com/HubOl01/my_songbook"],
     creator: nickname,
     fullStack: [FullStack.Flutter, FullStack.Dart],
-    platforms: [Platforms.Android],
+    platforms: [
+      Platforms.Android,
+      Platforms.IOS,
+      Platforms.Web,
+      Platforms.Windows,
+    ],
     color: "",
   },
   {

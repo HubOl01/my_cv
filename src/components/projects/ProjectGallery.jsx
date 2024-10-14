@@ -45,6 +45,7 @@ const ProjectGallery = ({ project }) => {
               className="rounded-xl cursor-pointer shadow-lg"
               src={img}
               alt={`Image ${index + 1}`}
+              onDragStart={(event) => event.preventDefault()}
               style={{ minHeight: "300px", minWidth: "200px" }} // Высота по максимуму, ширина авто
             />
           </div>

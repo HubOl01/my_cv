@@ -3,6 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import ProjectSingle from "./ProjectSingle";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import ProjectsFilter from "./ProjectsFilter";
+import bg_github from "../../images/bg_github.png";
 
 const ProjectsGrid = () => {
   const {
@@ -97,26 +98,41 @@ const ProjectsGrid = () => {
         {selectProject
           ? selectProjectsByCategory.map((project) => (
               <ProjectSingle
+                project={project}
                 title={project.title}
                 category={project.category}
-                image={project.url_background}
+                image={
+                  project.url_background != null
+                    ? project.url_background
+                    : bg_github
+                }
                 key={project.id}
               />
             ))
           : searchProject
           ? searchProjectsByTitle.map((project) => (
               <ProjectSingle
+                project={project}
                 title={project.title}
                 category={project.category}
-                image={project.url_background}
+                image={
+                  project.url_background != null
+                    ? project.url_background
+                    : bg_github
+                }
                 key={project.id}
               />
             ))
           : projects.map((project) => (
               <ProjectSingle
+                project={project}
                 title={project.title}
                 category={project.category}
-                image={project.url_background}
+                image={
+                  project.url_background != null
+                    ? project.url_background
+                    : bg_github
+                }
                 key={project.id}
               />
             ))}

@@ -203,7 +203,12 @@ body {
 .font-general-bold-italic {
   font-family: "GeneralSans-BoldItalic";
 }
-
+body {
+  background-color: #fff;
+}
+.dark body {
+  background-color: rgb(13 36 56);
+}
 /* Scroll to top style */
 .scrollToTop {
   @apply bg-indigo-600;
@@ -221,6 +226,13 @@ body {
 }
 .dark .scrollToTop {
   color: white;
+}
+.overflow-hidden {
+  overflow-x: hidden;
+}
+.scrollable-div {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .scrollToTop:hover {

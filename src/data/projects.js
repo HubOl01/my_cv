@@ -27,6 +27,8 @@ import img1_CA from "../images/My_projects/City_Adventures/screens/screen_1.jpg"
 import img2_CA from "../images/My_projects/City_Adventures/screens/screen_2.jpg";
 import img3_CA from "../images/My_projects/City_Adventures/screens/screen_3.jpg";
 import img4_CA from "../images/My_projects/City_Adventures/screens/screen_4.png";
+import bg_CA from "../images/My_projects/City_Adventures/bg_CA.png";
+import icon_CA from "../images/My_projects/City_Adventures/icon_app.jpg";
 import bg_MyCV from "../images/My_projects/My_CV/my_cv.png";
 
 export const nickname = "ru-developer";
@@ -161,6 +163,8 @@ export const projectsData = [
     id: 4,
     title: "City Adventures",
     category: category[0],
+    url_icon: icon_CA,
+    url_background: bg_CA,
     description: [
       "City Adventures - это захватывающее мобильное приложение, которое превращает вашу прогулку по городу в увлекательное приключение! Исследуйте свой город совершенно по-новому, обнаруживая его забытые и малоизвестные жемчужины.",
       "\n",

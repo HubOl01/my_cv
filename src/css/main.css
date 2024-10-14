@@ -456,6 +456,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 8rem;
   }
 }
+
+.overflow-hidden {
+  overflow-x: hidden;
+}
+.scrollable-div {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .fixed {
   position: fixed;
 }

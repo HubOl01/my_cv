@@ -1,9 +1,11 @@
-import { useContext } from "react";
-import SingleProjectContext from "../../context/SingleProjectContext";
 import { Platforms } from "../../data/projects";
-const ProjectInfo = ({ project }) => {
-  const { singleProjectData } = useContext(SingleProjectContext);
+import { Img_icon } from "../../components/Img_icon";
+import { FaGithub } from "react-icons/fa";
+import RustoreIcon from "../../images/rustore.png";
+import HuaweiIcon from "../../images/appgallery.png";
+import GetAppsIcon from "../../images/getapp.png";
 
+const ProjectInfo = ({ project }) => {
   return (
     <div className="block sm:flex gap-0 sm:gap-10 mt-14">
       <div className="w-full sm:w-1/3 text-left">
@@ -17,31 +19,66 @@ const ProjectInfo = ({ project }) => {
               className="font-general-regular text-ternary-dark dark:text-ternary-light"
               //   key={info.id}
             >
-              <span>Разработчик: </span>
-              <a
-                // className={
-                //   info.title === "Website" || info.title === "Phone"
-                //     ? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
-                //     : ""
-                // }
-                aria-label="Project Website and Phone"
-              >
-                {project.creator}
-              </a>
+              <strong>Разработчик: </strong>
+              <a aria-label="developer">{project.creator}</a>
             </li>
           </ul>
         </div>
 
         {/* Single project objectives */}
+
         <div className="mb-7">
           <p className="font-general-regular text-2xl font-medium text-ternary-dark dark:text-ternary-light mb-2">
             Краткое описание
           </p>
           <p className="font-general-regular text-primary-dark dark:text-ternary-light">
-            {singleProjectData.ProjectInfo.ObjectivesDetails}
+            {project.shortDescription}
           </p>
         </div>
 
+        <div className="mb-7">
+          <p className="font-general-regular text-2xl font-medium text-ternary-dark dark:text-ternary-light mb-2">
+            Ссылки
+          </p>
+          <div className="flex">
+            <a
+              href={project.url_sources[0]}
+              style={{ color: "black" }}
+              onDragStart={(event) => event.preventDefault()}
+            >
+              <FaGithub
+                className="dark:text-ternary-light"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  marginRight: "10px",
+                }}
+              />
+            </a>
+            {project.url_stores != null ? (
+              project.url_stores.map((store) => (
+                <a
+                  href={store}
+                  style={{ color: "black" }}
+                  onDragStart={(event) => event.preventDefault()}
+                >
+                  {store.includes("rustore") ? (
+                    <Img_icon icon={RustoreIcon}></Img_icon>
+                  ) : store.includes("huawei") ? (
+                    <Img_icon icon={HuaweiIcon}></Img_icon>
+                  ) : store.includes("app.mi") ? (
+                    <Img_icon icon={GetAppsIcon}></Img_icon>
+                  ) : (
+                    <></>
+                  )}
+                </a>
+              ))
+            ) : (
+              <></>
+            )}
+          </div>
+          <p className="font-general-regular text-primary-dark dark:text-ternary-light"></p>
+        </div>
         {/* Single project technologies */}
         <div className="mb-7">
           <p className="font-general-regular text-2xl font-medium text-ternary-dark dark:text-ternary-light mb-2">
@@ -109,18 +146,52 @@ const ProjectInfo = ({ project }) => {
       {/*  Single project right section */}
       <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
         <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-          {singleProjectData.ProjectInfo.ProjectDetailsHeading}
+          Описание проекта
         </p>
-        {singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
+        {project.description.map((line, index) => {
+          // Если строка начинается с "##", рендерим как заголовок
+          if (line.startsWith("##")) {
+            return (
+              <div
+                key={index}
+                className="font-general-semibold mt-5 mb-5 text-xl text-ternary-dark dark:text-ternary-light"
+              >
+                {line.replace("## ", "")}
+              </div>
+            );
+          }
+          if (line.startsWith("-")) {
+            return (
+              <p
+                key={index}
+                className="font-general-regular mb-0 text-lg text-ternary-dark dark:text-ternary-light"
+              >
+                {line}
+              </p>
+            );
+          }
+
+          // Иначе рендерим как обычный параграф
+          return (
+            <p
+              key={index}
+              className="font-general-regular mt-5 mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+            >
+              {line}
+            </p>
+          );
+        })}
+
+        {/* {singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
           return (
             <p
               key={details.id}
               className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
             >
-              {details.details}
+              
             </p>
           );
-        })}
+        })} */}
       </div>
     </div>
   );

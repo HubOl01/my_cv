@@ -9,6 +9,7 @@
 		"@testing-library/user-event": "^14.4.3",
 		"emailjs-com": "^3.2.0",
 		"framer-motion": "4.1.17",
+		"markdown-to-jsx": "^7.5.0",
 		"postcss-cli": "^10.1.0",
 		"react": "^18.1.0",
 		"react-countup": "^6.1.1",
@@ -18,6 +19,7 @@
 		"react-scripts": "4.0.3",
 		"react-scroll": "^1.8.4",
 		"styled-components": "^5.3.3",
+		"vfile": "^6.0.3",
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {

@@ -13,7 +13,7 @@ const ProjectRelatedProjects = ({ project }) => {
         Другие проекты
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
+      <div className="grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4	xl:grid-cols-4 2xl:grid-cols-4 gap-10">
         {projectsData.map((otherProject) => {
           return project.id === otherProject.id ? (
             <></>
@@ -25,7 +25,12 @@ const ProjectRelatedProjects = ({ project }) => {
                     ? otherProject.url_background
                     : bg_github
                 }
-                className="rounded-xl cursor-pointer"
+                className="rounded-xl cursor-pointer border-none w-full"
+                style={{
+                  height: "160px",
+                  objectFit: "cover",
+                  minWidth: "170px",
+                }}
                 alt={otherProject.title}
                 key={otherProject.id}
               />

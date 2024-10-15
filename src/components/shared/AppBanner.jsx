@@ -23,7 +23,8 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase flex items-center"
+          // className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase flex items-center"
+          className="font-general-semibold mt-4 text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-gray-500 dark:text-gray-200 uppercase"
         >
           Hi, I am <br />
           ru-developer

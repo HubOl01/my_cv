@@ -17,7 +17,8 @@ const ProjectSingle = ({ title, category, image, project }) => {
           <div>
             <img
               src={image}
-              className="rounded-t-xl border-none"
+              className="rounded-t-xl border-none w-full"
+              style={{ height: "210px", objectFit: "cover" }}
               alt="Single Project"
             />
           </div>

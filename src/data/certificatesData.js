@@ -1,11 +1,11 @@
 // Import images
-import cert1 from "../assets/certificates/Braim.Challenge_Платформа_инновационных_соревнований.jpg";
-import cert2 from "../assets/certificates/Braim.Challenge_Платформа_инновационных_соревнований_отборочный.jpg";
-import cert3 from "../assets/certificates/Braim.Challenge_Платформа_инновационных_соревнований_участие.jpg";
+import cert1 from "../assets/certificates/cert1.jpg";
+import cert2 from "../assets/certificates/cert2.jpg";
+import cert3 from "../assets/certificates/cert3.jpg";
 import cert4 from "../assets/certificates/Cert_Cifra-24.png";
 import cert5 from "../assets/certificates/mobile_cert.jpg";
 import cert6 from "../assets/certificates/stepik-certificate-SQL.jpg";
-import cert7 from "../assets/certificates/Сертификат_о_прохождении_онлайн-тренинга.jpg";
+import cert7 from "../assets/certificates/cert4.jpg";
 
 export const certificatesHeading = "Мои сертификаты";
 

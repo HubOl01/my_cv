@@ -22,12 +22,12 @@ function App() {
           <AppHeader />
           <Suspense fallback={""}>
             <Routes>
-              <Route path="my_cv/" element={<Home />} />
-              <Route path="my_cv/projects" element={<Projects />} />
-              <Route path="my_cv/projects/:id" element={<ProjectSingle />} />
+              <Route path="/my_cv/" element={<Home />} />
+              <Route path="/my_cv/projects" element={<Projects />} />
+              <Route path="/my_cv/projects/:id" element={<ProjectSingle />} />
 
-              <Route path="my_cv/about" element={<About />} />
-              <Route path="my_cv/contact" element={<Contact />} />
+              <Route path="/my_cv/about" element={<About />} />
+              <Route path="/my_cv/contact" element={<Contact />} />
             </Routes>
           </Suspense>
           <AppFooter />

@@ -6,7 +6,7 @@ const socialLinks = [
   {
     id: 1,
     icon: <FiGlobe />,
-    url: "",
+    url: "/my_cv/",
   },
   {
     id: 2,

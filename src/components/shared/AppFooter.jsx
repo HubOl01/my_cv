@@ -26,7 +26,7 @@ const socialLinks = [
   {
     id: 5,
     icon: <FiLinkedin />,
-    url: "www.linkedin.com/in/ru-developer",
+    url: "https://www.linkedin.com/in/ru-developer",
   },
 ];
 

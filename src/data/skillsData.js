@@ -7,6 +7,7 @@ export const skillsData = [
     id: 1,
     title: "Languages",
     skills: [
+      "C++",
       FullStack.C_sharp,
       FullStack.Python,
       FullStack.SQL,

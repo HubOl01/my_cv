@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import RustoreIcon from "../../assets/rustore.png";
 import HuaweiIcon from "../../assets/appgallery.png";
 import GetAppsIcon from "../../assets/getapp.png";
+import { BsGlobe2 } from "react-icons/bs";
 
 const ProjectInfo = ({ project }) => {
   return (
@@ -68,6 +69,8 @@ const ProjectInfo = ({ project }) => {
                     <Img_icon icon={HuaweiIcon}></Img_icon>
                   ) : store.includes("app.mi") ? (
                     <Img_icon icon={GetAppsIcon}></Img_icon>
+                  ) : store == "/" ? (
+                    <BsGlobe2 size={40} className="text-primary-dark dark:text-ternary-light" style={{marginRight: "10px",}} />
                   ) : (
                     <></>
                   )}

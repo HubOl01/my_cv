@@ -1,4 +1,5 @@
 import { Horizontable } from "../Horizontable";
+import { Platforms } from "../../data/projects";
 const ProjectGallery = ({ project }) => {
   return (
     <Horizontable>
@@ -26,7 +27,11 @@ const ProjectGallery = ({ project }) => {
               src={img}
               alt={`Image ${index + 1}`}
               onDragStart={(event) => event.preventDefault()}
-              style={{ minHeight: "300px", minWidth: "200px" }} // Высота по максимуму, ширина авто
+              style={{
+                minHeight: "300px",
+                minWidth:
+                  project.platforms == Platforms.Web ? "500px" : "200px",
+              }}
             />
           </div>
         ))}

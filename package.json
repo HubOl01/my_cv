@@ -25,7 +25,7 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"predeploy": "yarn start build",
+		"predeploy": "npm start build",
 		"deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
 		"build": "yarn run react-scripts build",

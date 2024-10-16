@@ -16,6 +16,14 @@
 		 webvisor:true
 	});
  </script>
+		<script type="text/javascript">
+	var redirectTo = window.location.pathname;
+	if (!redirectTo.startsWith('/my_cv')) {
+	  redirectTo = '/my_cv';
+	}
+	window.location.replace('/my_cv' + redirectTo.substring(7));
+  </script>
+
 		<noscript><div><img src="https://mc.yandex.ru/watch/98653381"
 					style="position:absolute; left:-9999px;" alt /></div></noscript>
 		<!-- /Yandex.Metrika counter -->

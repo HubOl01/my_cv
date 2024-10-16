@@ -3,8 +3,8 @@ import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import HireMeModal from "../HireMeModal";
-import logoLight from "../../images/about/logo_dark.svg";
-import logoDark from "../../images/about/logo_light.svg";
+import logoLight from "../../assets/about/logo_dark.svg";
+import logoDark from "../../assets/about/logo_light.svg";
 import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 
@@ -120,7 +120,7 @@ const AppHeader = () => {
           >
             Контакты
           </Link>
-          <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+          {/* <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
             <span
               onClick={showHireMeModal}
               className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
@@ -128,7 +128,7 @@ const AppHeader = () => {
             >
               <Button title="Hire Me" />
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Header links large screen */}

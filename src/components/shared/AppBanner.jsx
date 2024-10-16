@@ -1,7 +1,7 @@
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 // import { FiArrowDownCircle } from 'react-icons/fi';
-import developerLight from "../../images/developer.svg";
-import developerDark from "../../images/developer-dark.svg";
+import developerLight from "../../assets/developer.svg";
+import developerDark from "../../assets/developer-dark.svg";
 import { motion } from "framer-motion";
 
 const AppBanner = () => {
@@ -39,7 +39,7 @@ const AppBanner = () => {
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
         >
-          A Full-Stack Developer & Mobile Developer
+          Flutter Developer
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}

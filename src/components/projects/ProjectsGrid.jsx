@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import ProjectSingle from "./ProjectSingle";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import ProjectsFilter from "./ProjectsFilter";
-import bg_github from "../../images/bg_github.png";
+import bg_github from "../../assets/bg_github.png";
 
 const ProjectsGrid = () => {
   const {

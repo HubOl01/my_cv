@@ -1,9 +1,9 @@
 import { Platforms } from "../../data/projects";
 import { Img_icon } from "../../components/Img_icon";
 import { FaGithub } from "react-icons/fa";
-import RustoreIcon from "../../images/rustore.png";
-import HuaweiIcon from "../../images/appgallery.png";
-import GetAppsIcon from "../../images/getapp.png";
+import RustoreIcon from "../../assets/rustore.png";
+import HuaweiIcon from "../../assets/appgallery.png";
+import GetAppsIcon from "../../assets/getapp.png";
 
 const ProjectInfo = ({ project }) => {
   return (

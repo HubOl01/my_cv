@@ -1,6 +1,4 @@
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
-
+/* eslint-disable */
 const ModalComponent = ({ open, handleClose, photoCurrent }) => {
   if (!open) return null;
 

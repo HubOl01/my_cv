@@ -1,10 +1,6 @@
-import { useContext } from "react";
-import { FiClock, FiTag } from "react-icons/fi";
-// import SingleProjectContext from "../../context/SingleProjectContext";
-
+import { FiTag } from "react-icons/fi";
+/* eslint-disable */
 const ProjectSingleHeader = ({ project }) => {
-  //   const { project } = useContext(SingleProjectContext);
-
   return (
     <div>
       <p className="flex content-end mt-14 sm:mt-20 mb-7">

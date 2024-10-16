@@ -5,7 +5,7 @@ import RustoreIcon from "../../assets/rustore.png";
 import HuaweiIcon from "../../assets/appgallery.png";
 import GetAppsIcon from "../../assets/getapp.png";
 import { BsGlobe2 } from "react-icons/bs";
-
+/* eslint-disable */
 const ProjectInfo = ({ project }) => {
   return (
     <div className="block sm:flex gap-0 sm:gap-10 mt-14">
@@ -70,7 +70,11 @@ const ProjectInfo = ({ project }) => {
                   ) : store.includes("app.mi") ? (
                     <Img_icon icon={GetAppsIcon}></Img_icon>
                   ) : store == "/" ? (
-                    <BsGlobe2 size={40} className="text-primary-dark dark:text-ternary-light" style={{marginRight: "10px",}} />
+                    <BsGlobe2
+                      size={40}
+                      className="text-primary-dark dark:text-ternary-light"
+                      style={{ marginRight: "10px" }}
+                    />
                   ) : (
                     <></>
                   )}

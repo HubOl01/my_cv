@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import SingleProjectContext from "../../context/SingleProjectContext";
 import bg_github from "../../assets/bg_github.png";
 import { projectsData } from "../../data/projects";
 import { Link } from "react-router-dom";

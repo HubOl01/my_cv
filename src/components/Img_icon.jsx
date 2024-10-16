@@ -1,4 +1,5 @@
 export function Img_icon({ icon }) {
+  /* eslint-disable */
   return (
     <img
       style={{

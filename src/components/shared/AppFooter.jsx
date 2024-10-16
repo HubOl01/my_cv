@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiGlobe, FiYoutube } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiGlobe } from "react-icons/fi";
 import { FaVk, FaTelegramPlane } from "react-icons/fa";
 import AppFooterCopyright from "./AppFooterCopyright";
 

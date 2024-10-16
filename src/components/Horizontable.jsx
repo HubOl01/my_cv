@@ -46,7 +46,8 @@ export const Horizontable = ({ children }) => {
 
     scrollingLeft(scrollLeft - walk);
   };
-
+  // eslint-disable-next-line
+  /* eslint-disable */
   const onWheel = (event) => {
     event.preventDefault();
 

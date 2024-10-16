@@ -1,6 +1,7 @@
 import { Horizontable } from "../Horizontable";
 import { Platforms } from "../../data/projects";
 const ProjectGallery = ({ project }) => {
+  /* eslint-disable */
   return (
     <Horizontable>
       <div

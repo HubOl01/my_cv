@@ -16,7 +16,7 @@ const ProjectRelatedProjects = ({ project }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
         {relatedProjects.map((otherProject) => (
-          <Link to={`/my_cv/projects/${otherProject.id}`} key={otherProject.id}>
+          <Link to={`/projects/${otherProject.id}`} key={otherProject.id}>
             <img
               src={
                 otherProject.url_background != null

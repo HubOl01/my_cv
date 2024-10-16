@@ -40,7 +40,11 @@ const ProjectSingle = () => {
     (project) => project.id.toString() === id
   )[0];
   if (!project) {
-    return <div>Проект не найден</div>;
+    return (
+      <div className="font-general-regular mb-0 text-lg text-center text-ternary-dark dark:text-ternary-light">
+        Проект не найден
+      </div>
+    );
   }
 
   return (

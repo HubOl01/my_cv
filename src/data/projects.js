@@ -423,7 +423,7 @@ export const projectsData = [
     url_icon: "",
     url_background: bg_MyCV,
     url_images: [bg_MyCV],
-    url_stores: ["my_cv/"],
+    url_stores: ["/my_cv/"],
     url_sources: ["https://github.com/HubOl01/my_cv"],
     creator: nickname,
     fullStack: [

@@ -69,7 +69,7 @@ const ProjectInfo = ({ project }) => {
                     <Img_icon icon={HuaweiIcon}></Img_icon>
                   ) : store.includes("app.mi") ? (
                     <Img_icon icon={GetAppsIcon}></Img_icon>
-                  ) : store == "/" ? (
+                  ) : store == "/my_cv/" ? (
                     <BsGlobe2
                       size={40}
                       className="text-primary-dark dark:text-ternary-light"

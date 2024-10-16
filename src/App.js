@@ -17,17 +17,17 @@ function App() {
   return (
     <AnimatePresence>
       <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-        <Router>
+        <Router basename="/my_cv">
           <ScrollToTop />
           <AppHeader />
           <Suspense fallback={""}>
             <Routes>
-              <Route path="/my_cv/" element={<Home />} />
-              <Route path="/my_cv/projects" element={<Projects />} />
-              <Route path="/my_cv/projects/:id" element={<ProjectSingle />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:id" element={<ProjectSingle />} />
 
-              <Route path="/my_cv/about" element={<About />} />
-              <Route path="/my_cv/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
           <AppFooter />

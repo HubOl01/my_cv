@@ -44,6 +44,7 @@ const ProjectInfo = ({ project }) => {
           <div className="flex">
             <a
               href={project.url_sources[0]}
+              target="_blank"
               style={{ color: "black" }}
               onDragStart={(event) => event.preventDefault()}
             >
@@ -60,6 +61,7 @@ const ProjectInfo = ({ project }) => {
               project.url_stores.map((store) => (
                 <a
                   href={store}
+                  target="_blank"
                   style={{ color: "black" }}
                   onDragStart={(event) => event.preventDefault()}
                 >

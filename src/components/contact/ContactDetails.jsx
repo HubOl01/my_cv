@@ -35,7 +35,7 @@ const ContactDetails = () => {
         </h2>
         <ul className="font-general-regular">
           {contacts.map((contact) => (
-            <a href={contact.url}>
+            <a href={contact.url} target="_blank">
               <li className="flex " key={contact.id}>
                 <i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
                   {contact.icon}

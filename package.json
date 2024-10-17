@@ -2,7 +2,6 @@
 	"name": "my_cv",
 	"version": "0.1.1",
 	"private": true,
-	"homepage": "https://hubol01.github.io/my_cv/",
 	"dependencies": {
 		"@formspree/react": "^2.5.1",
 		"@testing-library/jest-dom": "^5.16.5",

@@ -1,8 +1,7 @@
 const AboutCertificateSingle = ({ title, image }) => {
-
   return (
     <>
-      <a href={image}>
+      <a href={image} target="_blank">
         <img
           loading="lazy"
           src={image}

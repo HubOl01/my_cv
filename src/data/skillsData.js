@@ -51,7 +51,8 @@ export const skillsData = [
       "Firebase",
       "SQflite",
       "Dio",
-      "Интеграция с backend-сервисами через RESTful API и JSON",
+      "RESTful API",
+      "JSON",
     ],
   },
   {

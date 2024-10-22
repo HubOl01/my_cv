@@ -43,6 +43,19 @@ export const skillsData = [
   },
   {
     id: 4,
+    title: "Flutter",
+    skills: [
+      "BLoC",
+      "GetX",
+      "Hive",
+      "Firebase",
+      "SQflite",
+      "Dio",
+      "Интеграция с backend-сервисами через RESTful API и JSON",
+    ],
+  },
+  {
+    id: 5,
     title: "Frontend",
     skills: [
       FullStack.React,
@@ -56,7 +69,7 @@ export const skillsData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Backend",
     skills: [
       "React Query",
@@ -68,7 +81,7 @@ export const skillsData = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Tools",
     skills: [
       FullStack.Drawio,
@@ -77,38 +90,35 @@ export const skillsData = [
       FullStack.VSCodeRemote,
       FullStack.Lighthouse,
       FullStack.FlutterDevTools,
-      FullStack.FlutterDevTools,
-      FullStack.Lighthouse,
       FullStack.Winforms,
       ".NET Framework",
       "Obsidian",
-      "Git Bash",
       "Postman",
       "Figma",
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "IDEs",
     skills: ["MS Visual Studio", "VS Code", "Android Studio", "Unity", "Xcode"],
   },
   {
-    id: 8,
+    id: 9,
     title: "CI/CD",
     skills: ["Docker", "Docker compose", "SSH", "Github Actions", "Nginx"],
   },
   {
-    id: 9,
+    id: 10,
     title: "VCS",
     skills: ["GitHub", "GitFlic", "GitVerse"],
   },
   {
-    id: 10,
+    id: 11,
     title: "OS",
     skills: ["Windows", "Linux (Ubuntu, Debian, Manjaro)", "MacOS"],
   },
   {
-    id: 11,
+    id: 12,
     title: "Other",
     skills: ["OOP and functional programming", "Agile (scrum, kanban)"],
   },

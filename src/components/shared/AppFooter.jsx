@@ -21,7 +21,7 @@ const socialLinks = [
   {
     id: 4,
     icon: <FaTelegramPlane />,
-    url: "https://t.me/foward01",
+    url: "https://t.me/devrunner01",
   },
   {
     id: 5,

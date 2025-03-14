@@ -20,8 +20,8 @@ const contacts = [
   },
   {
     id: 3,
-    name: "@foward01",
-    url: "https://t.me/foward01",
+    name: "@devrunner01",
+    url: "https://t.me/devrunner01",
     icon: <FaTelegramPlane />,
   },
 ];

@@ -1,4 +1,4 @@
-import { Platforms } from "../../data/projects";
+import { category, Platforms } from "../../data/projects";
 import { Img_icon } from "../../components/Img_icon";
 import { FaGithub } from "react-icons/fa";
 import RustoreIcon from "../../assets/rustore.png";
@@ -7,6 +7,7 @@ import GetAppsIcon from "../../assets/getapp.png";
 import { BsGlobe2 } from "react-icons/bs";
 /* eslint-disable */
 const ProjectInfo = ({ project }) => {
+  var web = project.category === category[1];
   return (
     <div className="block sm:flex gap-0 sm:gap-10 mt-14">
       <div className="w-full sm:w-1/3 text-left">
@@ -71,7 +72,7 @@ const ProjectInfo = ({ project }) => {
                     <Img_icon icon={HuaweiIcon}></Img_icon>
                   ) : store.includes("app.mi") ? (
                     <Img_icon icon={GetAppsIcon}></Img_icon>
-                  ) : store == "/" ? (
+                  ) : store == "/" || web ? (
                     <BsGlobe2
                       size={40}
                       className="text-primary-dark dark:text-ternary-light"

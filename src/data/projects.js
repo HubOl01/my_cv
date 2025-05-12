@@ -48,10 +48,25 @@ import img9_LQ from "../assets/My_projects/LinguaQuest/screen_9.png";
 import img1_Weather from "../assets/My_projects/WeatherKotlin/search.png";
 import img2_Weather from "../assets/My_projects/WeatherKotlin/weather.png";
 import bg_Weather from "../assets/My_projects/WeatherKotlin/bg_img.png";
+import bg_SportVerse from "../assets/My_projects/SportVerse/Logo1.png";
+import img1_SportVerse from "../assets/My_projects/SportVerse/auth.png";
+import img2_SportVerse from "../assets/My_projects/SportVerse/register.png";
+import img3_SportVerse from "../assets/My_projects/SportVerse/main_user.png";
+import img4_SportVerse from "../assets/My_projects/SportVerse/training_plans.png";
+import img5_SportVerse from "../assets/My_projects/SportVerse/training_plan.png";
+import img6_SportVerse from "../assets/My_projects/SportVerse/create_plan.png";
+import img7_SportVerse from "../assets/My_projects/SportVerse/group.png";
+import img8_SportVerse from "../assets/My_projects/SportVerse/my_groups.png";
+import img9_SportVerse from "../assets/My_projects/SportVerse/edit_group.png";
+import img10_SportVerse from "../assets/My_projects/SportVerse/search_users.png";
+import img11_SportVerse from "../assets/My_projects/SportVerse/search_groups.png";
+import img12_SportVerse from "../assets/My_projects/SportVerse/profile_user.png";
+import img13_SportVerse from "../assets/My_projects/SportVerse/plan_create2.png";
+import video_SportVerse from "../assets/My_projects/SportVerse/SportVerse.mp4";
 
 export const nickname = "ru-developer";
 
-const category = ["Mobile Application", "Web Application"];
+export const category = ["Mobile Application", "Web Application"];
 
 export const Platforms = Object.freeze({
   Android: "Android",
@@ -96,6 +111,7 @@ export const FullStack = Object.freeze({
   CSS: "CSS",
   SCSS: "SCSS",
   Vite: "Vite",
+  MUI: "MUI",
   NestJS: "NestJS",
   Prisma: "Prisma",
   Swagger: "Swagger",
@@ -431,6 +447,64 @@ export const projectsData = [
       FullStack.Javascript,
       FullStack.Vite,
       FullStack.CSS,
+    ],
+    platforms: [Platforms.Web],
+    color: "",
+  },
+  {
+    id: 8,
+    title: "SportVerse",
+    category: category[1],
+    shortDescription:
+      "Веб-сервис предназначен для взаимодействия спортсменов и тренеров, обеспечивая удобное управление тренировочным процессом. Платформа позволяет создавать, редактировать и делиться тренировочными планами, отслеживать результаты, анализировать эффективность занятий, а также находить единомышленников и организовывать совместные тренировки.",
+    description: [
+      "Сервис создан как онлайн-платформа, объединяющая спортсменов и тренеров для более эффективного управления тренировками и общения в спортивной среде.",
+
+      "Основные функции:",
+
+      "- Создание и управление тренировочными планами  — пользователи могут составлять индивидуальные или групповые планы, добавлять упражнения, задавать параметры (подходы, повторения, вес и т.д.), а также публиковать их.",
+      "- Обмен планами  — возможность делиться тренировочными программами с другими пользователями или сохранять чужие в личную библиотеку.",
+      "- Социальное взаимодействие  — пользователи могут комментировать тренировки, ставить оценки, следить за активностью других участников, создавать группы.",
+      "- Поиск партнеров по тренировкам  — функционал для нахождения единомышленников по интересам, уровню подготовки и местоположению.",
+
+      "## Для кого разработан сервис?",
+      "- Профессиональные спортсмены",
+      "- Тренеры",
+      "- Любители спорта",
+
+      "Сайт разработан с использованием React.js, TypeScript, Vite, Tailwind CSS, Sass для фронтенда; NestJS, Prisma ORM, REST API и PostgreSQL для бэкенда; с применением JWT, bcrypt, HTTPS, CORS, ролевого доступа и Docker для безопасности и деплоя, хостинг на Vercel.",
+    ],
+    url_icon: "",
+    url_background: bg_SportVerse,
+    video: video_SportVerse,
+    url_images: [
+      img1_SportVerse,
+      img2_SportVerse,
+      img3_SportVerse,
+      img4_SportVerse,
+      img6_SportVerse,
+      img13_SportVerse,
+      img5_SportVerse,
+      img8_SportVerse,
+      img7_SportVerse,
+      img9_SportVerse,
+      img10_SportVerse,
+      img11_SportVerse,
+      img12_SportVerse,
+    ],
+    url_stores: ["https://sport-verse.vercel.app/"],
+    url_sources: ["https://github.com/HubOl01/my_cv"],
+    creator: nickname,
+    fullStack: [
+      FullStack.React,
+      FullStack.Typescript,
+      FullStack.Tailwind,
+      FullStack.MUI,
+      FullStack.Vite,
+      FullStack.SCSS,
+      FullStack.NestJS,
+      FullStack.Prisma,
+      FullStack.PostgreSQL,
     ],
     platforms: [Platforms.Web],
     color: "",

@@ -6,6 +6,8 @@ import AppFooter from "./components/shared/AppFooter";
 import AppHeader from "./components/shared/AppHeader";
 import "./css/App.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
+import { MetrikaCounter } from "react-metrika";
+import { Analytics } from "@vercel/analytics/react";
 
 const About = lazy(() => import("./pages/AboutMe"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
@@ -33,6 +35,14 @@ function App() {
           <AppFooter />
         </Router>
         <UseScrollToTop />
+        <MetrikaCounter
+          id={98653381}
+          options={{
+            trackHash: true,
+            webvisor: true,
+          }}
+        />
+        <Analytics />
       </div>
     </AnimatePresence>
   );

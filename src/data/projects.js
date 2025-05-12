@@ -493,7 +493,7 @@ export const projectsData = [
       img12_SportVerse,
     ],
     url_stores: ["https://sport-verse.vercel.app/"],
-    url_sources: ["https://github.com/HubOl01/my_cv"],
+    url_sources: null,
     creator: nickname,
     fullStack: [
       FullStack.React,

@@ -43,21 +43,24 @@ const ProjectInfo = ({ project }) => {
             Ссылки
           </p>
           <div className="flex">
-            <a
-              href={project.url_sources[0]}
-              target="_blank"
-              style={{ color: "black" }}
-              onDragStart={(event) => event.preventDefault()}
-            >
-              <FaGithub
-                className="dark:text-ternary-light"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  marginRight: "10px",
-                }}
-              />
-            </a>
+            {project.url_sources !== null && (
+              <a
+                href={project.url_sources[0]}
+                target="_blank"
+                style={{ color: "black" }}
+                onDragStart={(event) => event.preventDefault()}
+              >
+                <FaGithub
+                  className="dark:text-ternary-light"
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    marginRight: "10px",
+                  }}
+                />
+              </a>
+            )}
+
             {project.url_stores != null ? (
               project.url_stores.map((store) => (
                 <a

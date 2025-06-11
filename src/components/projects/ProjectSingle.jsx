@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 const ProjectSingle = ({ title, category, image, project }) => {
+  const [theme] = useThemeSwitcher();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -26,7 +30,15 @@ const ProjectSingle = ({ title, category, image, project }) => {
             <div className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
               {title}
             </div>
-            <span className="text-lg text-ternary-dark dark:text-ternary-light">
+            <span
+              className="text-lg"
+              style={{
+                color:
+                  theme !== "dark"
+                    ? "rgba(255, 255, 255, 0.5)"
+                    : "rgba(0, 0, 0, 0.5)",
+              }}
+            >
               {category}
             </span>
           </div>

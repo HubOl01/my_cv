@@ -64,9 +64,25 @@ import img12_SportVerse from "../assets/My_projects/SportVerse/profile_user.png"
 import img13_SportVerse from "../assets/My_projects/SportVerse/plan_create2.png";
 import video_SportVerse from "../assets/My_projects/SportVerse/SportVerse.mp4";
 
+import bg_CarMarket from "../assets/My_projects/car_market/car_market_img2.jpg";
+import img1_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-49-15.png";
+import img2_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-50-07.png";
+import img3_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-50-28.png";
+import img4_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-50-43.png";
+import img5_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-50-56.png";
+import img6_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-06.png";
+import img7_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-31.png";
+import img8_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-42.png";
+import img9_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-51.png";
+import img10_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-52-03.png";
+
 export const nickname = "ru-developer";
 
-export const category = ["Mobile Application", "Web Application"];
+export const category = [
+  "Mobile-приложение",
+  "Web-приложение",
+  "Desktop-приложение",
+];
 
 export const Platforms = Object.freeze({
   Android: "Android",
@@ -83,6 +99,7 @@ export const FullStack = Object.freeze({
   Kotlin: "Kotlin",
   Jetpack_Compose: "Jetpack Compose",
   Winforms: "Windows Forms .NET",
+  NetFramework: ".NET Framework",
   C_sharp: "C#",
   React: "React",
   Python: "Python",
@@ -507,6 +524,48 @@ export const projectsData = [
       FullStack.PostgreSQL,
     ],
     platforms: [Platforms.Web],
+    color: "",
+  },
+  {
+    id: 9,
+    title: "Автосалон",
+    category: category[2],
+    shortDescription:
+      "Учебный проект по созданию автосалона. Он разработан на C# с использованием технологии WinForms.",
+    description: [
+      "Это учебный проект, созданный в процессе изучения курса по управлению базами данных в университете. Проект разработан на языке программирования C# с использованием фреймворка WinForms (.NET Framework v4.8) и подключается к локальной базе данных MySQL.",
+      "",
+      "Основной задачей было разработать приложение с графическим интерфейсом, обеспечивающее подключение к базе данных. В рамках проекта реализованы следующие функции:",
+      "",
+      "- Работа со всеми таблицами модели (добавление, редактирование и удаление данных).",
+      "- Вывод данных через представления (views).",
+      "- Вызов хранимых процедур.",
+    ],
+    url_icon: "",
+    url_background: bg_CarMarket,
+    video: null,
+    url_images: [
+      img1_CarMarket,
+      img2_CarMarket,
+      img3_CarMarket,
+      img4_CarMarket,
+      img5_CarMarket,
+      img6_CarMarket,
+      img7_CarMarket,
+      img8_CarMarket,
+      img9_CarMarket,
+      img10_CarMarket,
+    ],
+    url_stores: null,
+    url_sources: ["https://github.com/HubOl01/car_market"],
+    creator: nickname,
+    fullStack: [
+      FullStack.C_sharp,
+      FullStack.MSSQL,
+      FullStack.Winforms,
+      FullStack.NetFramework,
+    ],
+    platforms: [Platforms.Windows],
     color: "",
   },
 ];

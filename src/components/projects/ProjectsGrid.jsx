@@ -123,19 +123,21 @@ const ProjectsGrid = () => {
                 key={project.id}
               />
             ))
-          : projects.map((project) => (
-              <ProjectSingle
-                project={project}
-                title={project.title}
-                category={project.category}
-                image={
-                  project.url_background != null
-                    ? project.url_background
-                    : bg_github
-                }
-                key={project.id}
-              />
-            ))}
+          : projects
+              .sort((a, b) => b.id - a.id)
+              .map((project) => (
+                <ProjectSingle
+                  project={project}
+                  title={project.title}
+                  category={project.category}
+                  image={
+                    project.url_background != null
+                      ? project.url_background
+                      : bg_github
+                  }
+                  key={project.id}
+                />
+              ))}
       </div>
     </section>
   );

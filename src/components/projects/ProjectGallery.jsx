@@ -53,7 +53,8 @@ import ProjectGalleryWeb from "./ProjectGalleryWeb";
 import ProjectGalleryMobile from "./ProjectGalleryMobile";
 
 const ProjectGallery = ({ project }) => {
-  var web = project.category === category[1];
+  var web =
+    project.category === category[1] || project.category === category[2];
   return (
     <Horizontable>
       {web ? (

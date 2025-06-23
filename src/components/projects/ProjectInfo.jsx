@@ -17,12 +17,17 @@ const ProjectInfo = ({ project }) => {
             {project.title}
           </p>
           <ul className="leading-loose">
-            <li
-              className="font-general-regular text-ternary-dark dark:text-ternary-light"
-              //   key={info.id}
-            >
+            <li className="font-general-regular text-ternary-dark dark:text-ternary-light">
               <strong>Разработчик: </strong>
-              <a aria-label="developer">{project.creator}</a>
+              <a
+                aria-label="developer"
+                style={{
+                  display: "inline-block",
+                  lineHeight: "normal",
+                }}
+              >
+                {project.creator}
+              </a>
             </li>
           </ul>
         </div>

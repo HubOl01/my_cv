@@ -76,6 +76,8 @@ import img8_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-42
 import img9_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-51.png";
 import img10_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-52-03.png";
 
+import bg_Platformer2d from "../assets/My_projects/Platformer2d/platformer2d.png";
+
 export const nickname = "ru-developer";
 
 export const category = [
@@ -90,6 +92,7 @@ export const Platforms = Object.freeze({
   Windows: "Windows",
   Linux: "Linux",
   Web: "Web",
+  Mac: "MacOS",
 });
 
 // Перечисление для FullStack технологий
@@ -116,6 +119,7 @@ export const FullStack = Object.freeze({
   http: "http",
   Audioplayers: "Audioplayers",
   Firebase: "Firebase",
+  Unity: "Unity",
   SQL: "SQL",
   MySQL: "MySQL",
   MSSQL: "MS SQL",
@@ -425,6 +429,36 @@ export const projectsData = [
   },
   {
     id: 7,
+    title: "Platformer 2d",
+    category: category[2],
+    shortDescription: "Игра - платформер приключенческая",
+    description: [
+      "Проект создан в рамках учебного курса ИГХТУ.",
+      "",
+      "Технические детали:",
+      "",
+      "- Игра написана на языке C# в среде Unity.",
+      "- Используется 2D-графика с пиксель-арт.",
+      "- Реализованы физика движения, анимации через Unity-компоненты (Rigidbody2D, Collider2D, Animator).",
+      "- Уровни созданы с помощью Tilemap для удобного дизайна локаций.",
+      "- ИИ врагов построен на простых алгоритмах.",
+      "- UI-система (жизни, кристаллы, меню) реализована через Canvas и Unity Events.",
+      "- Звуковое сопровождение взяты из открытых источников.",
+      "",
+      "Этот проект позволил нам освоить Unity, C#, командную работу и геймдизайн в рамках учебного курса.",
+    ],
+    url_icon: "",
+    url_background: bg_Platformer2d,
+    url_images: [bg_Platformer2d],
+    url_stores: null,
+    url_sources: ["https://github.com/HubOl01/platfomer2d"],
+    creator: "Разработан командой из двух человек",
+    fullStack: [FullStack.C_sharp, FullStack.Unity],
+    platforms: [Platforms.Windows, Platforms.Mac],
+    color: "",
+  },
+  {
+    id: 8,
     title: "My CV",
     category: category[1],
     shortDescription:
@@ -469,7 +503,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "SportVerse",
     category: category[1],
     shortDescription:
@@ -527,7 +561,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Автосалон",
     category: category[2],
     shortDescription:

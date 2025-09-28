@@ -1,9 +1,19 @@
 import icon_MyS from "../assets/My_projects/My_Songbook/my_songbook.png";
-import bg_MyS from "../assets/My_projects/My_Songbook/image16_9.png";
+import bg_MyS from "../assets/My_projects/My_Songbook/bg_MS.png";
 import img1_MyS from "../assets/My_projects/My_Songbook/screens/ru/screen_1.jpg";
 import img2_MyS from "../assets/My_projects/My_Songbook/screens/ru/screen_2.jpg";
 import img3_MyS from "../assets/My_projects/My_Songbook/screens/ru/screen_3.jpg";
 import img4_MyS from "../assets/My_projects/My_Songbook/screens/ru/screen_4.jpg";
+
+import icon_MySPro from "../assets/My_projects/My_Songbook_Pro/icon-v2.jpg";
+import bg_MySPro from "../assets/My_projects/My_Songbook_Pro/bg_MSPro.png";
+import img1_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen1.jpg";
+import img2_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen2.jpg";
+import img3_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen3.jpg";
+import img4_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen4.jpg";
+import img5_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen5.jpg";
+import img6_MySPro from "../assets/My_projects/My_Songbook_Pro/screens/screen6.jpg";
+
 import icon_MyU from "../assets/My_projects/Мой_универ/icon.png";
 import bg_MyU from "../assets/My_projects/Мой_универ/bg_img.png";
 import img1_MyU from "../assets/My_projects/Мой_универ/screens/screen_1.png";
@@ -12,6 +22,7 @@ import img3_MyU from "../assets/My_projects/Мой_универ/screens/screen_3
 import img4_MyU from "../assets/My_projects/Мой_универ/screens/screen_4.png";
 import img5_MyU from "../assets/My_projects/Мой_универ/screens/screen_5.png";
 import img6_MyU from "../assets/My_projects/Мой_универ/screens/screen_6.png";
+
 import icon_MyH from "../assets/My_projects/MyAppHome/logotip.png";
 import bg_MyH from "../assets/My_projects/MyAppHome/bg_img.png";
 import img1_MyH from "../assets/My_projects/MyAppHome/screens/Житель/1.png";
@@ -77,6 +88,16 @@ import img9_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-51-51
 import img10_CarMarket from "../assets/My_projects/car_market/2025-06-11-23-52-03.png";
 
 import bg_Platformer2d from "../assets/My_projects/Platformer2d/platformer2d.png";
+
+import bg_reader from "../assets/My_projects/Offline_reader/bg_img.png";
+import icon_reader from "../assets/My_projects/Offline_reader/offline_reader.jpg";
+import img1_reader from "../assets/My_projects/Offline_reader/screen1.jpg";
+import img2_reader from "../assets/My_projects/Offline_reader/screen2.jpg";
+import img3_reader from "../assets/My_projects/Offline_reader/screen3.jpg";
+import img4_reader from "../assets/My_projects/Offline_reader/screen4.jpg";
+import img5_reader from "../assets/My_projects/Offline_reader/screen5.jpg";
+import img6_reader from "../assets/My_projects/Offline_reader/screen6.jpg";
+import img7_reader from "../assets/My_projects/Offline_reader/screen7.jpg";
 
 export const nickname = "ru-developer";
 
@@ -147,6 +168,10 @@ export const FullStack = Object.freeze({
   SSH: "SSH",
   Lighthouse: "Lighthouse",
   FlutterDevTools: "Flutter DevTools",
+  Drift: "drift",
+  Hive: "hive",
+  BlocCubit: "bloc/cubit",
+  WebView: "flutter_inappwebview",
 });
 
 export const projectsData = [
@@ -196,6 +221,55 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: "My Songbook Pro",
+    category: category[0],
+    shortDescription:
+      "Песенник нового поколения — создавайте шедевры и делитесь ими легко и удобно!",
+    description: [
+      "My Songbook Pro — это настоящая творческая мастерская, которая всегда у вас под рукой. Независимо от того, являетесь ли вы гитаристом, певцом, композитором или просто любителем музыки, это приложение станет вашим надежным помощником в воплощении ваших музыкальных идей.",
+      "",
+      "## Основные функции:",
+      "- Записывайте и редактируйте песни: Создавайте музыку в любое время и в любом месте. Записывайте мелодии, добавляйте тексты и корректируйте аранжировки — все это доступно вам.",
+      "- Справочник аккордов для гитары: Независимо от вашего уровня мастерства, наше приложение предлагает обширный набор аккордов для гитары. Найдите нужный аккорд и создайте свой собственный уникальный звук.",
+      "- Автоскролл и удобная навигация: Никогда больше не теряйтесь в тексте! Функция автоскролла позволит вам сосредоточиться на музыке, не отвлекаясь на прокрутку.",
+      "- Улучшенный поиск песен: Быстро находите нужные композиции по названию или автору. Управляйте песнями прямо из поиска — делитесь, добавляйте в группы или удаляйте без лишних действий.",
+      "- Быстрое создание песен: Выделите текст песни в любом приложении и используйте функцию «Поделиться», чтобы мгновенно создать новую запись.",
+      "- Делитесь своей музыкой: Поделитесь своими произведениями с миром через социальные сети прямо из приложения. Позвольте всем услышать вашу творческую энергию.",
+      "- Аудиофайлы с песнями: Сохраняйте свои композиции в виде аудиофайлов. Прослушивайте их в любое время или отправляйте друзьям и коллегам.",
+      "- Группы и мультивыбор: легко создавайте и управляйте группами для организации песен. Также можно сразу добавить одну песню в несколько групп.   ",
+      "- Экспорт/импорт файлов: Храните свои файлы в безопасности или делитесь ими с другими устройствами.",
+      "",
+      "## Почему выбрать My Songbook Pro?",
+      "- Простота и удобство: Даже если вы начинающий музыкант, вы сможете создавать профессиональные композиции с легкостью.",
+      "- Безопасное хранение ваших произведений: Ваши записи останутся конфиденциальными. Работайте над своими идеями спокойно, зная, что они в безопасности.",
+      "",
+      "Неважно, являетесь ли вы новичком или профессионалом, My Songbook Pro поможет вам создать и поделиться музыкой, которая будет трогать сердца. Начните свое музыкальное путешествие уже сегодня!",
+    ],
+    url_background: bg_MySPro,
+    url_icon: icon_MySPro,
+    url_images: [
+      img1_MySPro,
+      img2_MySPro,
+      img3_MySPro,
+      img4_MySPro,
+      img5_MySPro,
+      img6_MySPro,
+    ],
+    url_stores: ["https://apps.rustore.ru/app/ru.ru_developer.my_songbook_pro"],
+    url_sources: ["https://github.com/HubOl01/my_songbook"],
+    creator: nickname,
+    fullStack: [
+      FullStack.Flutter,
+      FullStack.Dart,
+      FullStack.SQFlite,
+      FullStack.get,
+      FullStack.Audioplayers,
+    ],
+    platforms: [Platforms.Android],
+    color: "",
+  },
+  {
+    id: 3,
     title: "Мой универ - ИГХТУ",
     category: category[0],
     shortDescription:
@@ -240,7 +314,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "MyAppHome",
     shortDescription: "Приложение для многоквартирных домов",
     description: [
@@ -285,7 +359,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "City Adventures",
     category: category[0],
     url_icon: icon_CA,
@@ -325,7 +399,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "LinguaQuest",
     category: category[0],
     url_icon: icon_LQ,
@@ -406,7 +480,7 @@ export const projectsData = [
   //   color: "",
   // },
   {
-    id: 6,
+    id: 7,
     title: "WeatherKotlin",
     category: category[0],
     shortDescription:
@@ -428,7 +502,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Platformer 2d",
     category: category[2],
     shortDescription: "Игра - платформер приключенческая",
@@ -458,7 +532,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "My CV",
     category: category[1],
     shortDescription:
@@ -503,7 +577,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "SportVerse",
     category: category[1],
     shortDescription: "Веб-сервис для взаимодействия спортсменов",
@@ -561,7 +635,7 @@ export const projectsData = [
     color: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Автосалон",
     category: category[2],
     shortDescription:
@@ -600,6 +674,85 @@ export const projectsData = [
       FullStack.NetFramework,
     ],
     platforms: [Platforms.Windows],
+    color: "",
+  },
+
+  {
+    id: 12,
+    title: "Мои статьи — личная библиотека знаний",
+    shortDescription:
+      "Сохраняйте веб-страницы и читайте их офлайн в любом месте без интернета.",
+    description: [
+      "Мои статьи — удобная офлайн-читалка, позволяющая сохранять веб-страницы и читать их в любое время, даже без подключения к интернету.",
+
+      "В условиях отключения интернета, в поезде или в метро вы сможете спокойно продолжать читать интересные материалы.",
+
+      "## Особенности приложения:",
+      "- Сохранение полного содержимого веб-страниц для офлайн-чтения",
+      "- Поддержка популярных сайтов, таких как РуВики, Хабр, Telegraph, Дзен",
+      "- Удобная навигация по папкам",
+      "- Возможность оставить реакцию на статью в виде эмодзи",
+      "- Встроенный редактор для создания личных заметок",
+      "- Мгновенный переход к исходной странице через встроенный браузер",
+      "- Расширенный поиск по статьям и веб-страницам",
+      "- Сохранение позиции прокрутки веб-страницы для продолжения чтения",
+
+      "## Идеально подходит для:",
+      "- Длительных поездок на транспорте",
+      "- Путешествий за границу",
+      "- Чтения в зонах нестабильного соединения",
+      "- Сборки и систематизации полезных материалов",
+
+      "## Преимущества:",
+      "- Минималистичный и понятный интерфейс",
+      "- Надежное хранение контента",
+      "- Эффективная организация материалов",
+      "- Полноценное офлайн-чтение без ограничений",
+      // "“Мой дом” - приложение для коммуникации между управляющими компаниями и жильцами многоквартирных домов, которое решает проблему эффективности коммуникации.",
+      // "Функционал приложения:",
+      // "- Возможность оплаты коммунальных услуг через приложение",
+      // "- Возможность оставить заявку",
+      // "- Онлайн-опросы",
+      // "Дополнительные функции:",
+      // "- Уведомления о плановых и аварийных отключениях",
+      // "- Проведение общих собраний собственников и голосований с составлением официального протокола",
+      // "- Доступ управляющих организаций к данным “умных” приборов учёта коммунальных ресурсов и системам контроля протечек воды и утечек газа",
+      // "## Участие в акселераторах:",
+      // "Команда OVERLAGO успешно представила проект “Мой дом” на нескольких акселераторах, включая:",
+      // "- Акселератор Цифра",
+      // "- Акселератор Техлидеры 5.0",
+
+      // "## Отзывы и обратная связь:",
+      // "- Положительные отзывы от экспертов: Эксперты акселераторов высоко оценили функциональность и потенциал приложения, что дало команде уверенность в дальнейшем развитии проекта.",
+      // "- Предложения по улучшению: На основе обратной связи команда смогла внести улучшения в продукт, сделав его более удобным и полезным для пользователей.",
+      // "Эти достижения подтверждают, что проект “Мой дом” имеет большой потенциал и может стать успешным решением для улучшения коммуникации между управляющими компаниями и жильцами многоквартирных домов.",
+    ],
+    url_icon: icon_reader,
+    category: category[0],
+    url_background: bg_reader,
+    url_images: [
+      img1_reader,
+      img2_reader,
+      img3_reader,
+      img4_reader,
+      img5_reader,
+      img6_reader,
+      img7_reader,
+    ],
+    url_sources: null,
+    url_stores: [
+      "https://www.rustore.ru/catalog/app/ru.ru_developer.offline_reader",
+    ],
+    creator: nickname,
+    fullStack: [
+      FullStack.Flutter,
+      FullStack.Dart,
+      FullStack.Drift,
+      FullStack.Hive,
+      FullStack.WebView,
+      FullStack.BlocCubit,
+    ],
+    platforms: [Platforms.Android],
     color: "",
   },
 ];
